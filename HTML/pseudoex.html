@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <title>Pseudo classes and Pseudo elements</title>
+       <style>
+            input[type="number"]:out-of-range  {
+                border: 2px solid #ff0000; }
+            input [type="number"]:in-range{
+                border:2px solid #008000;  }
+            input [type="email"]:invalid{
+                border: 2px solid red; }           
+            
+            input[type="email"]::placeholder{
+                color: blue;
+            }    
+            p::irst-line{
+                text-decoration: underline;
+            }
+            p::first-letter{
+                font-size: 20px;
+                color: red;
+            }
+            p::before{
+                content: "KLU :";
+            }
+            p::after{
+                content: "END";
+            }
+            p::selection{
+                background-color: gray;
+                color: white
+            }
+            li::marker{
+                color: orangered;
+            }
+            .C1{
+                list-style-type: none;
+            }
+            .C1 li::before{
+                content: "\2713";
+                color:#ff0000;
+                margin-right: 5px;
+            }
+            
+       </style>
+    </head>
+    <body>
+        <input type= "number" placeholder= "Enter age" min=0 max=18 style="width: 500px;">
+        <br> <br>
+        <input type="email" placeholder="Enter email address">
+        <br><br>
+        <p> 
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere sed excepturi earum, obcaecati consectetur tenetur amet voluptate! Ea provident fugit perferendis error laudantium obcaecati tenetur adipisci sed dolorem blanditiis eveniet perspiciatis ad animi voluptates officiis nulla, in sapiente nam dolore accusantium reiciendis quisquam quod veritatis. Aut earum possimus ipsum quibusdam dignissimos optio, provident corrupti, corporis facilis ea cupiditate dolorem. Excepturi eos quia maiores harum laborum nesciunt architecto amet? Perferendis, ea et distinctio aspernatur, ad accusantium, incidunt temporibus modi recusandae impedit quo natus dicta. Neque odit magnam earum non, tempora corporis? Ratione quibusdam nostrum eius obcaecati! Deleniti tempore sunt numquam maiores, ratione nisi dolor molestias enim! Architecto libero sapiente est? Quam tenetur voluptates facere harum eligendi enim at eius nostrum, impedit minus explicabo optio repudiandae fugit ex quidem soluta porro sequi dolore mollitia laudantium repellendus. Harum amet, consequatur sunt nesciunt nam modi repellat voluptatum assumenda minima? Dicta, at magni officia enim eius eaque nemo iure soluta numquam. Voluptate iusto aliquid molestias, rerum aperiam voluptatibus eos sapiente id commodi sit consequuntur similique ea sed quis eaque voluptatem ad asperiores a. Dolores, obcaecati quod. Necessitatibus blanditiis provident beatae magni odit laborum, labore dignissimos deleniti in quae enim ea sed placeat id aliquam debitis?
+        </p>
+        <ul>
+            <li> Java </li>
+            <li> Python </li>
+            <li> PHP </li>
+            <li> ReactJS </li>
+        </ul>
+        <ul class="C1">
+            <li> Tech-Fest </li>
+            <li> SAMYAK </li>
+            <li> wOMEN'S DAY</li>
+        </ul>
+    </body>
+</html>
