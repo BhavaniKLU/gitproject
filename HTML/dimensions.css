@@ -10,3 +10,16 @@
 .c3{
     font-size: 3rem;
 }
+.percent_cls{
+   width: 400px;
+   height: 250px;
+   border: 1px solid red; 
+}
+.c4{
+    width: 100%;
+    background-color: orange;
+}
+.c5{
+    width: 50vw;
+    background-color: brown;
+}
