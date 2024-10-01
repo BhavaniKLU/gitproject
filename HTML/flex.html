@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex Examples</title>
+        <style>
+            .parent{
+                display:flex;
+                
+                /*justify-content: space-evenly;
+                
+                height: 100vh;
+                align-items: flex-end;*/
+
+                flex-direction: row;
+                flex-wrap:wrap-reverse;
+                
+            }
+
+            .common{
+                border: 1px solid gray;
+                margin: 20px;
+                padding: 20px;
+            }
+
+            .div1{
+                background-color: red;
+                order:5;
+            }
+
+            .div2{
+                background-color: green;
+                order:1
+            }
+
+            .div3{
+                background-color: yellow;
+                order:3
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--PARENT ELEMENT-->
+        <div class="parent">
+            <div class="common div1">Item1</div>
+            <div class="common div2">Item2</div>
+            <div class="common div3">Item3</div>
+                 
+        </div>
+
+    </body>
+</html>
